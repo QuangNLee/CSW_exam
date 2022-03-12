@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var url = new URL(url_string);
     var id = url.searchParams.get('id');
     var isEdit = false;
-    if (id != undefined) {
+    if (id != undefined && id.length > 0) {
         isEdit = true;
         let xmlHttpRequest = new XMLHttpRequest();
         xmlHttpRequest.onreadystatechange = function () {
